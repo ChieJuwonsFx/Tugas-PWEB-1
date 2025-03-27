@@ -33,10 +33,6 @@ A responsive restaurant website showcasing authentic Indonesian cuisine with bea
    start index.html
    ```
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Developer
 
 **Richie Olajuwon Santoso**  
