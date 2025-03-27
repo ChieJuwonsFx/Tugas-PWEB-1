@@ -1,0 +1,126 @@
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px 30px;
+    border-bottom: 3px solid #1E376A; 
+    border-radius: 0 0 10px 10px; 
+}
+
+section nav .logo img {
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+section nav ul {
+    list-style: none;
+    display: flex;
+    transition: transform 0.3s ease;
+    align-items: center;
+}
+
+section nav ul li {
+    margin: 0 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+section nav ul li a:hover {
+    color: #1E376A; 
+    transform: scale(1.1); 
+}
+
+section nav ul li.icons a {
+    display: block;
+    color: #555555;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section nav ul li.icons a:hover {
+    color: #1E376A; 
+    transform: rotate(20deg); 
+}
+
+section nav .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #1E376A;
+    position: absolute;
+    right: 30px; 
+    bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    section nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+    }
+    
+    section nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; 
+        padding: 10px 0;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    section nav ul li {
+        margin: 10px 0;
+    }
+
+    section nav ul li.icons {
+        margin: 10px 0;
+    }
+
+    section nav .icon {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    section nav .icon i {
+        font-size: 22px;
+        margin: 0 10px;
+        color: #555555;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    section nav .hamburger {
+        display: block;
+        color: #1E376A;
+    }
+
+    section nav ul.show {
+        display: flex; 
+    }
+
+    section nav .hamburger i {
+        font-size: 30px;
+    }
+}

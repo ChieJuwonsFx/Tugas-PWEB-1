@@ -1,0 +1,98 @@
+.testi {
+    width: 100%;
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.testi h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1E376A;
+}
+
+.testi h1 span {
+    color: #FFB800;
+}
+
+.testi_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testi_card {
+    background: white;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testi_card:hover {
+    transform: translateY(-10px);
+}
+
+.testi_profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testi_text .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #1E376A;
+}
+
+.testi_icon {
+    color: #FFB800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.testi_social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.testi_social i {
+    font-size: 14px;
+    color: #555555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.testi_social i:hover {
+    color: #1E376A;
+}
+
+.testi_text p {
+    font-size: 14px;
+    text-align: center;
+    color: #555555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .testi_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testi_card {
+        max-width: 90%;
+    }
+}

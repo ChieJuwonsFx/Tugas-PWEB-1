@@ -1,0 +1,137 @@
+.gallery {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.gallery h1 span {
+    margin-left: 12px;
+    color: #FFB800;
+}
+
+.gallery .gallery_image_box {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery .gallery_image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 4 / 3;
+}
+
+.gallery .gallery_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.gallery .gallery_image .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 15px;
+}
+
+.gallery .gallery_image:hover .overlay {
+    opacity: 1;
+}
+
+.gallery .gallery_image h3 {
+    font-size: 1.5rem;
+    color: #FFB800;
+    margin-bottom: 10px;
+}
+
+.gallery .gallery_image p {
+    font-size: 0.95rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.gallery .gallery_btn {
+    padding: 8px 16px;
+    background: #FFB800;
+    color: #1E376A;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.gallery .gallery_btn:hover {
+    background: #1E376A;
+    color: #FFB800;
+    border: #FFB800;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.gallery .gallery_image:hover img {
+    opacity: 0.75;
+}
+
+@media (max-width: 1024px) {
+    .gallery h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery h1 {
+        font-size: 32px;
+    }
+    .gallery .gallery_image_box {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .gallery .gallery_image h3 {
+        font-size: 1.3rem;
+    }
+    .gallery .gallery_image p {
+        font-size: 0.85rem;
+    }
+    .gallery .gallery_btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery h1 {
+        font-size: 26px;
+    }
+    .gallery .gallery_image_box {
+        grid-template-columns: 1fr; 
+    }
+    .gallery .gallery_image h3 {
+        font-size: 1.1rem;
+    }
+    .gallery .gallery_image p {
+        font-size: 0.8rem;
+    }
+    .gallery .gallery_btn {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
+}

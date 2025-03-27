@@ -1,0 +1,80 @@
+.about {
+    width: 100%;
+    height: auto; 
+    padding: 70px 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .about_main .about_text {
+    max-width: 600px;
+    width: 100%;
+}
+
+.about .about_main .about_text h1 {
+    font-size: 55px;
+    color: #1E376A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about .about_main .about_text h1 span {
+    color: #FFB800;
+}
+
+.about .about_main .about_text p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.about .about_main .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1150px) {
+    .about {
+        padding: 40px 10px;
+    }
+
+    .about .about_main {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px; 
+    }
+
+    .about .about_main .about_text h1 {
+        font-size: 36px;
+    }
+
+    .about .about_main .image img {
+        max-width: 50%;
+    }
+
+    .about .about_main .about_text p {
+        font-size: 20px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .about .about_btn {
+        width: 100%; 
+        text-align: center;
+        padding: 12px 25px;
+        margin-top: 20px;
+    }
+}
