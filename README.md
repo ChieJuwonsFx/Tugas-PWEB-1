@@ -30,7 +30,7 @@ A responsive restaurant website showcasing authentic Indonesian cuisine with bea
 
 3. Open in your browser:
    ```bash
-   start index.html  # On Windows
+   start index.html
    ```
 
 ## 📜 License
