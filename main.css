@@ -14,12 +14,36 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-img.lazy {
+.show {
+    display: flex !important;
+}
+        
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1E376A;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 1000;
 }
-
-img.lazy.loaded {
+.scroll-to-top:hover{
+    background-color: #ffffff;
+    border: #1E376A;
+    border-style: solid;
+    border-width: 1px;
+    color: #1E376A;
+}
+        
+.scroll-to-top.visible {
     opacity: 1;
 }
 
